@@ -41,6 +41,6 @@ export default class boats
 
     update()
     {
-       
+       this.boats.model.rotation.y += 0.001
     }
 }

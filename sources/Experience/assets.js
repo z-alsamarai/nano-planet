@@ -15,6 +15,7 @@ export default [
             { name: 'houses', source: '/assets/models/houses.glb', type: 'model' },
             { name: 'trees', source: '/assets/models/trees.glb', type: 'model' },
             { name: 'moon', source: '/assets/models/moon.glb', type: 'model' },
+            { name: 'water', source: '/assets/models/water.glb', type: 'model' },
         ]
     }
 ]

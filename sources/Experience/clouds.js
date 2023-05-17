@@ -41,6 +41,6 @@ export default class clouds
 
     update()
     {
-       
+       this.clouds.model.rotation.y += 0.001
     }
 }

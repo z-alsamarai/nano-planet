@@ -41,6 +41,6 @@ export default class trees
 
     update()
     {
-       
+       this.trees.model.rotation.y += 0.001
     }
 }

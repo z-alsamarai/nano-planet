@@ -7,6 +7,7 @@ import trees from "./trees.js";
 import boats from "./boats.js";
 import moon from "./moon.js";
 import clouds from "./clouds.js";
+import water from "./water.js";
 
 export default class World {
   constructor(_options) {
@@ -24,6 +25,7 @@ export default class World {
         this.setBoats();
         this.setMoon();
         this.setClouds();
+        this.setWater();
       }
     });
   }
@@ -56,9 +58,38 @@ export default class World {
     this.clouds = new clouds();
   }
 
+  setWater() {
+    this.water = new water();
+  }
+
   resize() {}
 
-  update() {}
+  update() {
+    if (this.earth) {
+      this.earth.update();
+    }
+    if (this.airplane) {
+      this.airplane.update();
+    }
+    if (this.houses) {
+      this.houses.update();
+    }
+    if (this.trees) {
+      this.trees.update();
+    }
+    if (this.boats) {
+      this.boats.update();
+    }
+    if (this.moon) {
+      this.moon.update();
+    }
+    if (this.clouds) {
+      this.clouds.update();
+    }
+    if (this.water) {
+      this.water.update();
+    }
+  }
 
   destroy() {}
 }

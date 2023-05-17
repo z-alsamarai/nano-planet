@@ -41,6 +41,6 @@ export default class houses
 
     update()
     {
-       
+       this.houses.model.rotation.y += 0.001
     }
 }
